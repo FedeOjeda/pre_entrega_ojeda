@@ -3,6 +3,7 @@ import time
 
 # Función principal Login 
 def login(driver):
+    
     # Accedo a la página
     driver.get("https://www.saucedemo.com/")
     
