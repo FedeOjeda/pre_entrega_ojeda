@@ -18,7 +18,7 @@ def test_cart(login_in_driver):
         assert carrito == "1","No hay productos cargados en el carrito."
         
     except Exception as e:
-        print(f"Error en test_inventory: {e}")
+        print(f"Error en test_cart: {e}")
         raise
     
     finally:
