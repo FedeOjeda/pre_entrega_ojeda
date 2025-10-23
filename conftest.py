@@ -11,6 +11,7 @@ def driver():
     yield driver
     driver.quit()
 
+# Función para inciar Sesión
 @pytest.fixture
 def login_in_driver(driver):
     login(driver)

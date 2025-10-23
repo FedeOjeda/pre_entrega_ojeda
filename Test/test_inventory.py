@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 
+# Test de la página del Inventario
 def test_inventory(login_in_driver):
     try:
         # Dentro de una variable cargo la función del login
