@@ -1,18 +1,16 @@
 from selenium.webdriver.common.by import By
 from selenium import webdriver
+import pytest 
+from Utils.datos import leer_csv_login
+from Pages.login_page import LoginPage
 
 # Test del Login
-def test_login_validation(login_in_driver):
-    try:
-        # Dentro de una variable cargo la función del login
-        driver = login_in_driver
+@pytest.mark.parametrize("usuario,password,debe_funcionar",leer_csv_login("datos/data_login.csv"))
+def test_login_validation(login_in_driver,usuario,password,debe_funcionar):
+    driver = login_in_driver
 
-        # Comprueba que carga la página del inventario
+    if debe_funcionar == True:
         assert "/inventory.html" in driver.current_url, "No se redirgio al inventario"
-
-    except Exception as e:
-        print(f"Error en test_login: {e}")
-        raise
-    finally:
-        driver.quit()
-    
+    elif debe_funcionar == False:
+        mensaje_error = LoginPage(driver).obtener_error()
+        assert "Epic sadface" in mensaje_error, "el mensaje de error no se esta mostrando"

@@ -1,7 +1,7 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from pages.login_page import LoginPage
+from Pages.login_page import LoginPage
 
 # Archivo Global
 
@@ -16,6 +16,6 @@ def driver():
 
 # Función para inciar Sesión
 @pytest.fixture
-def login_in_driver(driver):
-    LoginPage(driver).abrir_pagina().login_completo("standard_user","secret_sauce")
+def login_in_driver(driver,usuario,password):
+    LoginPage(driver).abrir_pagina().login_completo(usuario,password)
     return driver
