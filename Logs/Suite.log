@@ -1,0 +1,15 @@
+14:25:59INFOTalentoTechCompletando con los datos de usuario
+14:25:59INFOTalentoTechVerificando redireccionamiento dentro de la página
+14:25:59INFOTalentoTechTest de Login completado
+14:26:06INFOTalentoTechCompletando con los datos de usuario
+14:28:23 INFO TalentoTech Completando con los datos de usuario
+14:28:23 INFO TalentoTech Verificando redireccionamiento dentro de la página
+14:28:23 INFO TalentoTech Test de Login completado
+14:28:31 INFO TalentoTech Completando con los datos de usuario
+2025-11-28 14:30:40 INFO TalentoTech: Completando con los datos de usuario
+2025-11-28 14:30:40 INFO TalentoTech: Verificando redireccionamiento dentro de la página
+2025-11-28 14:30:40 INFO TalentoTech: Test de Login completado
+2025-11-28 14:30:49 INFO TalentoTech: Completando con los datos de usuario
+2025-11-28 14:57:19 INFO TalentoTech: Realizando la solicitud GEt a https://reqres.in/api/users 
+2025-11-28 14:57:20 INFO TalentoTech: Status code: 200 
+2025-11-28 14:57:20 INFO TalentoTech: Validando el id dentro del usuario
