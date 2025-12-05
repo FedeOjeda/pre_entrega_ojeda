@@ -17,14 +17,17 @@ Este proyecto tiene como objetivo automatizar pruebas de UI y de API para el sit
 El proyecto genera tres tipos principales de resultados durante la ejecucion de las prubas: **reporte HTML**, **capturas de pantalla**, **archivo de log**
 
 ### Reporte HTML
-Se genera un reporte HTML detallado con el nombre de ```reporte.hmtl``` en la **carpeta raiz** del proyecto
+Se genera un reporte HTML detallado con el nombre de ```reporte.hmtl``` en la 
+**carpeta raiz** del proyecto
 
 ### Logs de ejecución
-Tambien se genera un log con informacion detallada de toda la ejecución de las pruebas en la siguiente ubicacion: ```logs/suite.log``
+Tambien se genera un log con informacion detallada de toda la ejecución de las pruebas en 
+la siguiente ubicacion: ```logs/suite.log``
 
 
 ### Capturas de pantalla
-Captura de pantalla
+Se realizan capturas de pantalla por cada test que haya fallado y se encuentran en 
+la siguiente ubicacion: ```reports/screens/```
 
 ## Ejuctar todas las pruebas
 Para iniciar la ejecucion de las pruebas debes ejecutar la siguiente linea:

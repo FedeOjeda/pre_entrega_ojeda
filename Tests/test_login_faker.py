@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 import pytest
 from faker import Faker 
-from Pages.login_page import LoginPage
+from pages.login_page import LoginPage
 
 fake = Faker()    
 
@@ -14,6 +14,7 @@ fake = Faker()
 ])
 def test_login_validation(login_in_driver,usuario,password,debe_funcionar):
     driver = login_in_driver
+    LoginPage(driver).login_completo(usuario,password)
 
     if debe_funcionar == True:
         assert "/inventory.html" in driver.current_url, "No se redirgio al inventario"

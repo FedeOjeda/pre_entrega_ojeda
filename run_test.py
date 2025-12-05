@@ -6,7 +6,7 @@ test_files = [
     "Tests/test_inventory.py",
     "Tests/test_cart.py",
     "Tests/test_cart_json.py",
-    "Test/test_api_reqres.py"
+    "Tests/test_api_reqres.py"
     
 ]
 
