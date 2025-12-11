@@ -11,7 +11,7 @@ import time
 target = pathlib.Path("reports/screens")
 target.mkdir(parents=True, exist_ok=True)
 
-# Abre chrome como incognito y desactiva popup de contraseña filtrada
+# Abre Chrome como incognito y desactiva popup de contraseña filtrada
 @pytest.fixture
 def driver():
     chrome_opt = Options()
