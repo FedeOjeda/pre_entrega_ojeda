@@ -16,6 +16,11 @@ target.mkdir(parents=True, exist_ok=True)
 def driver():
     chrome_opt = Options()
     chrome_opt.add_argument("--incognito")
+    chrome_opt.add_argument("--no-sandbox") # github
+    chrome_opt.add_argument("--disable-gpu") # github
+    chrome_opt.add_argument("--window-size=1920,1080") # github
+    chrome_opt.add_argument("--headless=new") # github
+    
     driver = webdriver.Chrome(options=chrome_opt)
     yield driver
     driver.quit()
